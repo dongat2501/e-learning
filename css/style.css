@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: #e5e5e5;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.nunito-font {
+    font-family: 'Nunito', sans-serif;
+}
+
+.grey-text {
+    color: #4E4B66;
+}
+
+.black-text {
+    color: #14142B;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-content-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.container-width {
+    max-width: 1440px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.page-title {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    background: #fff;
+}
+
+.page-title-text {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(34/28);
+}
+@media screen and (min-width: 768px) {
+    .page-title-text {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .page-title-text {
+        font-size: 28px;
+    }
+}
+
+.page-title-heading {
+    margin: 0 15px;
+    font-size: 27px;
+    font-weight: 800;
+    font-style: italic;
+}
+@media screen and (min-width: 768px) {
+    .page-title-heading {
+        font-size: 40px;
+        line-height: calc(24/48);
+    }
+}
+@media screen and (min-width: 1280px) {
+    .page-title-heading {
+        font-size: 48px;
+    }
+}
+
+.light-block {
+    width: 24px;
+    display: inline-block;
+}
+
+.select-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+    background: #fff;
+    border-radius: 22px;
+    border: 6px solid transparent;
+}
+
+@media screen and (min-width: 1280px) {
+    .select-form {
+        max-width: 253px;
+        margin: 0;
+    }
+}
+
+.select-inner {
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 2px solid #FF6609;
+}
+
+.select-form select {
+    padding: 20px 15px 15px;
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(22/16);
+    -webkit-appearance: none;
+}
+
+.select-form select:focus-visible {
+    outline: 0;
+}
+
+.select-form:hover, .form-focus {
+    border: 6px solid #ffdecc;
+}
+
+.arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #14142B;
+    border-left: 2px solid #14142B;
+}
+
+.arrow.arrow-down {
+    transform: rotate(-135deg) translateX(3px);
+}
+
+
