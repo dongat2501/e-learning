@@ -10,35 +10,271 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/style.js"></script>
 </head>
+
 <body>
-    
     <section class="page-title">
         <div class="container-fluid container-width page-title-container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-3"></div>
-                <div class="col-sm-12 col-lg-6 text-center">
+            <div class="row flex-center flex-wrap">
+                <div class="col-xs-12 col-lg-3"></div>
+                <div class="col-xs-12 col-md-6 text-center">
                     <h3 class="grey-text page-title-text">ĐẤU TRƯỜNG</h3>
                     <div class="flex-center">
                         <span class="light-block"><img src='img/lightning.png' /></span>
-                        <h1 class="black-text nunito-font page-title-heading">NHANH NHƯ CHỚP</h1>
+                        <h1 class="black-text nunito-font italic page-title-heading">NHANH NHƯ CHỚP</h1>
                         <span class="light-block"><img src='img/lightning.png' /></span>
                     </div>
-                    
+
                 </div>
-                <div class="col-sm-12 col-lg-3 flex-content-right full-height">
-                    <div class="select-form">
-                        <div class="flex-center select-inner">
-                            <select class="flex-1 black-text">
-                                <option>LỚP 1</option>
-                                <option>LỚP 2</option>
-                                <option>LỚP 3</option>
-                            </select>
-                            <span class="arrow arrow-down"></span>
+                <div class="col-xs-12 col-md-6 col-lg-3 flex-content-right full-height">
+                    <div class="select-box">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="0" value="1" name="Ben"
+                                    checked="checked" />
+                                <p class="select-box__input-text">Lớp 1</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                                <p class="select-box__input-text">Lớp 2</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                                <p class="select-box__input-text">Lớp 3</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="3" value="4" name="Ben" />
+                                <p class="select-box__input-text">Lớp 4</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="4" value="5" name="Ben" />
+                                <p class="select-box__input-text">Lớp 5</p>
+                            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
+                                alt="Arrow Icon" aria-hidden="true" />
                         </div>
+                        <ul class="select-box__list arrow-top">
+                            <li>
+                                <label class="select-box__option active-item" for="0" aria-hidden="aria-hidden">Lớp
+                                    1</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="1" aria-hidden="aria-hidden">Lớp 2</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="2" aria-hidden="aria-hidden">Lớp 3</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="3" aria-hidden="aria-hidden">Lớp 4</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="4" aria-hidden="aria-hidden">Lớp 5</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="page-main">
+        <section class="two-up">
+            <div class="container flex-center flex-colum two-up-container">
+                <h1 class="white-text two-up-title text-center">TRẬN ĐẤU SẮP DIỄN RA</h1>
+                <!--Đăng ký thi đấu-->
+                <div class="row flex-center grid-two">
+                    <!--Trận đấu toám-tiếng việt-->
+                    <div class="col-xs-12 col-md-7">
+                        <section class="card-two">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="card-two-header">
+                                        <h2 class="white-text text-center card-two-heading">TRẬN ĐẤU TOÁN - TIẾNG VIỆT</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7 br-blue">
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian bắt đầu:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/7/2021</h1>
+                                    </div>
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian kết thúc:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/8/2021</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 text-center">
+                                    <h1 class="sub-heading black-text">SỐ LƯỢNG CHIẾN BINH ĐĂNG KÝ THAM GIA</h1>
+                                    <h1 class="mb-10 page-title-heading blue-text">2000</h1>
+                                </div>
+                                <div class="col-xs-12 card-two-footer">
+                                    <div class="mb-15"><button class="white-text btn btn-orange card-two-cta">ĐĂNG KÍ THI ĐẤU</button></div>
+                                    <a href="#" class="white-text card-two-cta">XEM THỂ LỆ</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc trận đấu toán-tiếng việt-->
+                  
+                </div>
+                <!--Kết thúc Đăng ký thi đấu-->
+
+                <!--Bạn đã đăng ký tham gia-->
+                <div class="row flex-center grid-two grid-registed">
+                    <!--Trận đấu toám-tiếng việt-->
+                    <div class="col-xs-12 col-md-7">
+                        <section class="card-two">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="card-two-header">
+                                        <h2 class="white-text text-center card-two-heading">TRẬN ĐẤU TOÁN - TIẾNG VIỆT</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7 br-blue">
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian bắt đầu:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/7/2021</h1>
+                                    </div>
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian kết thúc:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/8/2021</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 text-center">
+                                    <h1 class="sub-heading black-text">SỐ LƯỢNG CHIẾN BINH ĐĂNG KÝ THAM GIA</h1>
+                                    <h1 class="mb-10 page-title-heading blue-text">2000</h1>
+                                </div>
+                                <div class="col-xs-12 card-two-footer">
+                                    <div class="mb-15"><button class="btn orange-text card-two-cta"><img class="btn-img " src="img/student.png" /><span>Bạn đã đăng ký tham gia</span></button></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc trận đấu toán-tiếng việt-->
+                </div>
+                <!--Kết thúc Bạn đã đăng ký tham gia-->
+
+                <!--Đăng ký thi đấu-->
+                <div class="row flex-center grid-two">
+                    <!--Trận đấu toám-tiếng việt-->
+                    <div class="col-xs-12 col-md-7">
+                        <section class="card-two">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="card-two-header">
+                                        <h2 class="white-text text-center card-two-heading">TRẬN ĐẤU TOÁN - TIẾNG VIỆT</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7 br-blue">
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian bắt đầu:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/7/2021</h1>
+                                    </div>
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian kết thúc:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/8/2021</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 text-center">
+                                    <h1 class="sub-heading black-text">SỐ LƯỢNG CHIẾN BINH ĐĂNG KÝ THAM GIA</h1>
+                                    <h1 class="mb-10 page-title-heading blue-text">2000</h1>
+                                </div>
+                                <div class="col-xs-12 card-two-footer">
+                                    <div class="mb-15"><button class="white-text btn btn-orange card-two-cta">ĐĂNG KÍ THI ĐẤU</button></div>
+                                    <a href="#" class="white-text card-two-cta">XEM THỂ LỆ</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc trận đấu toán-tiếng việt-->
+                    <!--Thành tích tốt nhất của bạn-->
+                    <div class="col-xs-12 col-md-5">
+                        <section class="small-card">
+                            <h1 class="black-text small-heading text-center">THÀNH TÍCH TỐT NHẤT CỦA BẠN</h1>
+                            <p class="orange-text text-center large-description">Trận đấu tiếng anh (thứ 6, 2/8)</p>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="small-card-img">
+                                        <div class="card-img-inner">
+                                            <img src="img/student.png" />
+                                        </div>
+                                        <img class="sub-img" src="img/united-kingdom.png" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h1 class="black-text mb-10 small-heading">Vũ Thu Thảo - Lớp 3</h1>
+                                    <div class="row">
+                                        <div class="col-xs-6 br-blue">
+                                            <p class="lightgrey-text description">Tia chớp</p>
+                                            <div class="flex-vertical-center">
+                                                <h2 class="orange-text card-two-heading mr-10">10</h2>
+                                                <img class="small-img" src="img/small-lightning.png" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 text-center">
+                                            <p class="lightgrey-text description">Tia chớp</p>
+                                            <h2 class="orange-text card-two-heading">TOP 10</h2>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc Thành tích tốt nhất của bạn-->
+                </div>
+                <!--Kết thúc Đăng ký thi đấu-->
+
+                <!--Chat với đối thủ-->
+                <div class="row flex-center grid-two">
+                    <!--Trận đấu toám-tiếng việt-->
+                    <div class="col-xs-12 col-md-7">
+                        <section class="card-two">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="card-two-header">
+                                        <h2 class="white-text text-center card-two-heading">TRẬN ĐẤU TOÁN - TIẾNG VIỆT</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7 br-blue">
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian bắt đầu:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/7/2021</h1>
+                                    </div>
+                                    <div class="mb-15">
+                                        <p class="lightgrey-text description">Thời gian kết thúc:</p>
+                                        <h1 class="black-text sub-title">20:00:00 Chủ nhật, 2/8/2021</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 text-center">
+                                    <h1 class="sub-heading black-text mb-15">TRẬN ĐẤU SẼ CHÍNH THỨC BẮT ĐẦU SAU:</h1>
+                                    <h1 class="mb-10 page-large-heading red-text">110’ : 22”</h1>
+                                </div>
+                                <div class="col-xs-12 card-two-footer">
+                                    <div class="mb-15"><button class="white-text btn btn-orange card-two-cta">ĐĂNG KÍ THI ĐẤU</button></div>
+                                    <a href="#" class="white-text card-two-cta">XEM THỂ LỆ</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc trận đấu toán-tiếng việt-->
+                    <!--Thành tích tốt nhất của bạn-->
+                    <div class="col-xs-12 col-md-5">
+                        <section class="card-two">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2 class="orange-text text-center page-title-heading text-center">200+</h2>
+                                    <h2 class="description text-center black-text">HỌC SINH ĐĂNG KÍ THAM GIA</h2>
+                                </div>
+                                
+                                <div class="col-xs-12 card-two-footer">
+                                    <div class="mb-15"><button class="btn orange-text card-two-cta">CHAT VỚI ĐỐI THỦ</button></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Kết thúc Thành tích tốt nhất của bạn-->
+                </div>
+                <!--Kết thúc chát với đối thủ-->
+            </div>
+        </section>
+    </section>
 </body>
+
 </html>
