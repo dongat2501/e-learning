@@ -74,6 +74,11 @@ img {
     justify-content: center;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .flex-vertical-center {
     display: flex;
     align-items: center;
@@ -621,6 +626,10 @@ img {
 
 .br-blue {
     border-right: 1px solid #D9DBE9;
+}
+
+.bl-blue {
+    border-left: 1px solid #D9DBE9;
 }
 
 .sub-heading {
