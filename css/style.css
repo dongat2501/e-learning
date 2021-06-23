@@ -63,6 +63,11 @@ img {
     display: flex;
 }
 
+.flex-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
@@ -79,7 +84,7 @@ img {
     justify-content: center;
 }
 
-.flex-colum {
+.flex-column {
     flex-direction: column;
 }
 
@@ -554,6 +559,10 @@ img {
     }
 }
 
+.pb-0 {
+    padding-bottom: 0!important;
+}
+
 .mb-0 {
     margin-bottom: 0!important;
 }
@@ -584,6 +593,10 @@ img {
 
 .mb-40 {
     margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
 }
 
 .mr-5 {
@@ -705,8 +718,17 @@ img {
     border-radius: 50%;
 }
 
+.second-img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .sub-img {
     width: 48px;
+    min-width: 48px;
     height: 48px;
     border-radius: 50%;
     overflow: hidden;
@@ -923,8 +945,9 @@ img {
 }
 
 .table-img {
-    width: 51px;
-    height: 51px;
+    width: 54px;
+    min-width: 54px;
+    height: 54px;
     position: relative;
     border-radius: 50%;
 }
@@ -948,8 +971,11 @@ img {
 .table-block {
     width: 100%;
     text-align: center;
-    min-width: 860px;
-    
+    min-width: 860px;  
+}
+
+.table-block .description {
+    text-align: left;
 }
 
 .table-header {
@@ -996,3 +1022,68 @@ img {
     }
 }
 
+.hero-title {
+    border: 0;
+    padding-bottom: 0;
+}
+
+.card-two.card-registed {
+    padding: 15px 27px;
+}
+
+.small-table .r-table { 
+    margin: 0;
+    border-radius: 0;
+}
+
+.small-table .table-block {
+    min-width: 650px;
+    padding-top: 13px;
+    margin-bottom: 40px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 110.02%);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.chat-box {
+    padding: 25px 0;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.chat-container {
+    padding: 0 25px;
+}
+
+.input-chat {
+    padding: 8px;
+    background: #F7F7FC;
+    border-radius: 16px;
+}
+
+.input-user {
+    padding: 5px 0px 5px 8px;
+}
+
+.input-user:focus {
+    outline: none;
+}
+
+.chat-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.send-btn {
+    background: #0395EE url(../img/send.png);
+    border-radius: 8px;
+}
+
+.heart-btn {
+    background-color: transparent;
+    background-image: url(../img/heart.png);
+}
