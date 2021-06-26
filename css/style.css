@@ -787,7 +787,9 @@ img {
 }
 
 .btn-orange.btn:hover {
-	opacity: 0.8;
+	color: #FF6609;
+	border-color: #FF6609;
+	background: linear-gradient(161.77deg, #fff -12.3%, #fff 120.9%);
 }
 
 .card-two-footer {
