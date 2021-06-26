@@ -452,9 +452,17 @@ img {
 	background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 992px) {
+	.page-main {
+		max-height: calc(100vh - 180px);
+		overflow-y: auto;
+	}
+}
+
 @media screen and (min-width: 1280px) {
 	.page-main {
 		background-image: url(../img/bghozital.png);
+		max-height: calc(100vh - 194px);
 	}
 }
 
