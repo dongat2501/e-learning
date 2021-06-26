@@ -181,6 +181,24 @@ img {
 	}
 }
 
+.cert-heading {
+	font-size: 27px;
+	font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+	.cert-heading {
+		font-size: 32px;
+		line-height: calc(50/40);
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.cert-heading {
+		font-size: 40px;
+	}
+}
+
 .squada-font {
 	font-family: 'Squada One', cursive;
 }
@@ -592,6 +610,11 @@ img {
 	line-height: calc(18/14);
 }
 
+.smallest-des {
+	font-size: 10px;
+	line-height: calc(12.5/10);
+}
+
 .sub-small-des {
 	font-size: 12px;
 	line-height: calc(18/12);
@@ -720,6 +743,11 @@ img {
 	color: #4C43FF;
 }
 
+.deep-blue {
+	color: #153074;
+
+}
+
 .red-text {
 	color: #FF3F3F;
 }
@@ -831,6 +859,10 @@ img {
 
 .small-img {
 	width: 15px;
+}
+
+.sub-small-img {
+	width: 12px;
 }
 
 .grid-registed {
@@ -1056,6 +1088,28 @@ img {
 	z-index: 1;
 }
 
+.top {
+	position: relative;
+}
+
+.top img {
+	border-radius: 50%;
+	position: relative;
+	z-index: 3;
+}
+
+.large-avatar.top::before {
+	content: ' ';
+    width: 87px;
+    height: 89px;
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+    background-image: url(../img/frame-table.png);
+    z-index: 1;
+    background-size: cover;
+}
+
 .table-block {
 	width: 100%;
 	text-align: center;
@@ -1216,12 +1270,12 @@ img {
 }
 
 .large-avatar {
-	width: 70px;
-	height: 70px;
+	width: 74px;
+	height: 74px;
 	margin: -35px auto 10px;
 	border-radius: 50%;
 	border: 2px solid #fff;
-	overflow: hidden;
+	
 }
 
 .card-wrapper {
@@ -1416,4 +1470,87 @@ img {
 
 input:focus {
     outline: none;
+}
+
+.card-result .card-wrapper {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.block-point {
+	position: absolute;
+	left: calc(50% + 35px);
+	bottom: 0;
+}
+
+.cert {
+	padding: 35px 0;
+	background-image: url("../img/bg-top.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.08));
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.cert-logo {
+	max-width: 98px;
+}
+
+.cert .light-block {
+	width: 17px;
+}
+
+.cert-title {
+	font-size: 20px;
+	line-height: calc(37.5/30);
+}
+
+@media screen and (min-width: 768px) {
+	.cert-title {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.cert-title {
+		font-size: 30px;
+	}
+}
+
+.scale-button:hover i {
+	color: #FF6609;
+}
+
+.scale-button i {
+	color: #FF6609;
+}
+
+.scale-button {
+	color: #FF6609;
+	justify-content: center;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1280px){
+	.scale-button {
+		justify-content: flex-start;
+	}
+	.scale-button i {
+		color: #6E7191;
+		transition: all 0.3s ease-in-out;
+	}
+	.hover-text {
+		color: #e5e5e5;
+	}
+}
+
+.hover-text {
+	white-space: nowrap;
+	transition: all 0.3s ease-in-out;
+}
+
+.scale-button:hover .hover-text {
+	color: #FF6609;
 }
