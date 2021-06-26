@@ -1710,3 +1710,62 @@ input:focus {
   .img-modal-small {
 	max-width: 215px;
 }
+
+#compettionModal::before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: #111;
+	opacity: 0.7;
+}
+
+#compettionModal ul {
+	border-bottom: 2px solid #FFDECC;
+}
+
+#compettionModal a {
+	color: #6e7191;
+}
+
+#compettionModal .active {
+	border-color: transparent;
+}
+
+#compettionModal li {
+	position: relative;
+}
+
+#compettionModal li::before {
+	content: '';
+	width: 0%;
+	height: 5px;
+	background: #FF6609;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 6px;
+	transition: all 0.3s ease-in-out;
+}
+
+#compettionModal .active::before {
+	width: 100%;
+}
+
+#compettionModal .active a, #compettionModal a:hover {
+	color: #FF6609;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+#compettionModal .modal-body {
+	position: relative;
+}
+
+.btn-compettion {
+	position: absolute;
+	top: 0px;
+	right: -10px;
+}

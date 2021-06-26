@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
 </head>
 
@@ -578,7 +579,8 @@
                                                         TIẾNG VIỆT</h2>
                                                     <p class="white-text description">Thứ 6, 9/7/2021</p>
                                                 </div>
-                                                <div class="header-right flex-center blue-text small-heading">SẮP DIỄN RA</div>
+                                                <div class="header-right flex-center blue-text small-heading">SẮP DIỄN
+                                                    RA</div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 mb-25 br-blue text-center">
@@ -606,7 +608,8 @@
                                                         TIẾNG VIỆT</h2>
                                                     <p class="white-text description">Thứ 6, 9/7/2021</p>
                                                 </div>
-                                                <div class="header-right flex-center blue-text small-heading">SẮP DIỄN RA</div>
+                                                <div class="header-right flex-center blue-text small-heading">SẮP DIỄN
+                                                    RA</div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 mb-25 br-blue text-center">
@@ -617,7 +620,10 @@
                                             <p class="lightgrey-text description">Thời gian kết thúc:</p>
                                             <h1 class="black-text sub-title">20:00:00 </h1>
                                         </div>
-                                        <div class="mb-20 col-xs-12 flex-center btn-registed"><button class="flex-vertical-center btn orange-text card-two-cta"><img class="btn-img " src="img/student.png"><span class="nunito-font italic">Bạn đã đăng ký tham gia</span></button>
+                                        <div class="mb-20 col-xs-12 flex-center btn-registed"><button
+                                                class="flex-vertical-center btn orange-text card-two-cta"><img
+                                                    class="btn-img " src="img/student.png"><span
+                                                    class="nunito-font italic">Bạn đã đăng ký tham gia</span></button>
                                         </div>
                                     </div>
                                 </section>
@@ -646,7 +652,8 @@
                                                         TIẾNG VIỆT</h2>
                                                     <p class="white-text description">Thứ 6, 9/7/2021</p>
                                                 </div>
-                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT THÚC</div>
+                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT
+                                                    THÚC</div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 mb-25 br-blue text-center">
@@ -674,7 +681,8 @@
                                                         TIẾNG VIỆT</h2>
                                                     <p class="white-text description">Thứ 6, 9/7/2021</p>
                                                 </div>
-                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT THÚC</div>
+                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT
+                                                    THÚC</div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 mb-25 br-blue text-center">
@@ -702,7 +710,8 @@
                                                         TIẾNG VIỆT</h2>
                                                     <p class="white-text description">Thứ 6, 9/7/2021</p>
                                                 </div>
-                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT THÚC</div>
+                                                <div class="header-right flex-center white-text small-heading">ĐÃ KẾT
+                                                    THÚC</div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 mb-25 br-blue text-center">
@@ -726,8 +735,43 @@
             </div>
         </section>
     </section>
-    
-    
+    <!-- Modal -->
+    <div id="compettionModal" class="modal fade in" role="dialog" style="display: block;">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="btn-trans btn-compettion">
+                        <img src="img/close-btn.png" />
+                    </button>
+                    <ul class="nav nav-tabs flex-center mb-20">
+                        <li class="active card-two-cta grey-text"><a data-toggle="tab" href="#rule">THỂ LỆ CUỘC THI</a>
+                        </li>
+                        <li class="card-two-cta grey-text"><a data-toggle="tab" href="#video">VIDEO HƯỚNG DẪN</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="rule" class="tab-pane fade in active">
+                            <div class="rule-img">
+                                <img src="img/rule.png" />
+                            </div>
+                        </div>
+                        <div id="video" class="tab-pane fade">
+                            <div class="rule-img">
+                                <video style="width: 100%;" controls>
+                                    <source src="mov_bbb.mp4" type="video/mp4">
+                                    <source src="mov_bbb.ogg" type="video/ogg">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
 </body>
 
 </html>
