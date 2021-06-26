@@ -1692,3 +1692,11 @@ input:focus {
   .modal-cert i {
 	  cursor: pointer;
   }
+
+  .img-modal {
+	  max-width: 500px;
+  }
+
+  .img-modal-small {
+	max-width: 215px;
+}
