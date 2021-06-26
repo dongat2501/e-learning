@@ -1447,7 +1447,7 @@ img {
 .container-radio .checkmark:after {
 	top: 9px;
 	left: 9px;
-	width: 8px;
+	width: 0px;
 	height: 8px;
 	border-radius: 50%;
 	background: #FF6609;
@@ -1554,3 +1554,83 @@ input:focus {
 .scale-button:hover .hover-text {
 	color: #FF6609;
 }
+
+.star-block {
+	min-width: 32px;
+	height: 32px;
+	margin-left: 10px;
+	background-image: url(../img/green-star.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.active.star-block {
+	min-width: 48px;
+	height: 46px;
+	background-image: url(../img/orange-star.png);
+	font-size: 18px;
+}
+
+.star-block:hover {
+	background-image: url(../img/orange-star.png);
+}
+
+.star-block:first-child {
+	margin-left: 0;
+}
+
+.star-block span {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.card-exam.solution .card-exam-header {
+	padding: 7px 18px;
+}
+
+.star-warrper {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.star-warrper::-webkit-scrollbar {
+	height: 3px;
+  }
+  
+  /* Track */
+  .star-warrper::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .star-warrper::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  
+  /* Handle on hover */
+  .star-warrper::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+  .wrong-answer {
+	background: rgba(255, 63, 63, 0.2);
+	border: 1.5px solid #FF3F3F;
+  }
+
+  .wrong-answer .container-radio input:checked~.checkmark {
+	background: #FF3F3F;
+	border: 1.5px solid #D9DBE9;
+  }
+
+  .correct {
+	background: rgba(0, 186, 97, 0.1);
+	border: 1.5px solid #00BA61;
+  }
+
+  .correct .container-radio input:checked~.checkmark {
+	background: #00BA61;
+	border: 1.5px solid #D9DBE9;
+  }
