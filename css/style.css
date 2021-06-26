@@ -1634,3 +1634,26 @@ input:focus {
 	background: #00BA61;
 	border: 1.5px solid #D9DBE9;
   }
+
+  .complete-img {
+	  height: 275px;
+	  display: flex;
+    align-items: flex-end;
+  }
+
+  .complete-img img {
+	height: unset;
+  }
+
+  .complete-msg {
+	max-width: 386px;
+    height: 180px;
+    padding: 30px;
+    background-image: url(../img/Union.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .complete-msg p {
+	  margin-top: 18px;
+  }
