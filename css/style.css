@@ -1543,10 +1543,24 @@ input:focus {
 	}
 	.hover-text {
 		color: #e5e5e5;
+		width: 0;
+	}
+	.modal-cert .cert {
+		padding: 70px 0;
+	}
+  
+	.modal-cert .cert-container {
+		transform: scale(1.175);
 	}
 }
 
+.btn-trans {
+	border: none;
+	background: transparent;
+}
+
 .hover-text {
+	width: 100%;
 	white-space: nowrap;
 	transition: all 0.3s ease-in-out;
 }
@@ -1567,15 +1581,22 @@ input:focus {
 	cursor: pointer;
 }
 
-.active.star-block {
+.star-block.wrong {
+	background-image: url(../img/orange-star.png);
+}
+
+.active.star-block, .star-block:hover {
+	min-width: 48px;
+	height: 46px;
+	background-image: url(../img/green-active-star.png);
+	font-size: 18px;
+}
+
+.active.star-block.wrong, .star-block.wrong:hover {
 	min-width: 48px;
 	height: 46px;
 	background-image: url(../img/orange-star.png);
 	font-size: 18px;
-}
-
-.star-block:hover {
-	background-image: url(../img/orange-star.png);
 }
 
 .star-block:first-child {
@@ -1656,4 +1677,18 @@ input:focus {
 
   .complete-msg p {
 	  margin-top: 18px;
+  }
+
+  .modal-cert .modal-content {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+  }
+
+  .modal-backdrop.in {
+	  opacity: .7;
+  }
+
+  .modal-cert i {
+	  cursor: pointer;
   }
